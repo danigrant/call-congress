@@ -23,7 +23,7 @@ for i in range (0,len(legislators)):
 for i in range (0,len(republicans)):
     scaleapi_client.create_phonecall_task(
         callback_url='example.com', # change this
-        instruction='Call this legislator and follow the script provided',
+        instruction='Call this legislator and follow the script provided. If there is no answer, leave a voicemail.',
         phone_number= republicans[i][1],
         entity_name= republicans[i][0],
         script='', # add whatever you want to be said
